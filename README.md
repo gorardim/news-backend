@@ -26,19 +26,37 @@ To run this project, you need to have the following prerequisites installed:
 ### Installation
 
 1. Clone the repository by running the following command:
-   git clone
+
+    ```bash
+    git clone https://github.com/gorardim/news-backend.git
+
+    ```
 
 2. Change to the project directory:
-   cd project-directory
+
+    ```bash
+    cd news-backend
+
+    ```
 
 3. Build and start the Docker containers:
-   docker-compose up -d
+
+    ```bash
+    docker-compose up -d
+
+    ```
 
 4. Run the database migrations and seed the database with initial data:
-   docker exec -i news-backend-laravel.test-1 php artisan migrate:fresh --seed
+
+    ```bash
+    docker exec -i news-backend-laravel.test-1 php artisan migrate:fresh --seed
+
+    ```
 
 5. Fetch news data:
-   docker exec -i news-backend-laravel.test-1 php artisan fetch:news
+    ```bash
+    docker exec -i news-backend-laravel.test-1 php artisan fetch:news
+    ```
 
 ## Usage
 
@@ -59,5 +77,4 @@ If you'd like to contribute to this project, please follow these steps:
 Include the license information for your project.
 
 MIT License
-...
 Feel free to modify this template according to your project's specific needs.
